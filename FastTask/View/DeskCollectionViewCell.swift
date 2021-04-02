@@ -59,25 +59,7 @@ class DeskCollectionViewCell:
     {
         return CGSize(width: collectionView.bounds.width, height: cellHeight)
     }
-    
-    func collectionView(
-        _ collectionView: UICollectionView,
-        layout collectionViewLayout: UICollectionViewLayout,
-        minimumLineSpacingForSectionAt section: Int)
-        -> CGFloat
-    {
-        return 0
-    }
-    
-    func collectionView(
-        _ collectionView: UICollectionView,
-        layout collectionViewLayout: UICollectionViewLayout,
-        minimumInteritemSpacingForSectionAt section: Int)
-        -> CGFloat
-    {
-        return 0
-    }
-    
+
     private func putShadowOnView() {
         shadowView.layer.borderWidth = 0.0
         shadowView.layer.shadowColor = UIColor.black.cgColor

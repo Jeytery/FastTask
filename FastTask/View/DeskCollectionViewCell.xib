@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="DeskCollectionViewCell" id="gTV-IL-0wX" customClass="DeskCollectionViewCell" customModule="FastTask" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="345" height="442"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="345" height="442"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Eu2-IU-MP4">
+                        <rect key="frame" x="0.0" y="0.0" width="345" height="442"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Efz-yw-2eZ">
+                                <rect key="frame" x="10" y="10" width="325" height="422"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                            </view>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="DaU-hx-RAc">
+                                <rect key="frame" x="10" y="10" width="325" height="422"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="Grj-KS-eaN">
+                                    <size key="itemSize" width="50" height="50"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                            </collectionView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="DaU-hx-RAc" secondAttribute="trailing" constant="10" id="Das-5H-Tdb"/>
+                            <constraint firstAttribute="trailing" secondItem="Efz-yw-2eZ" secondAttribute="trailing" constant="10" id="OVh-eC-AVY"/>
+                            <constraint firstItem="DaU-hx-RAc" firstAttribute="leading" secondItem="Eu2-IU-MP4" secondAttribute="leading" constant="10" id="PW3-4u-gZ3"/>
+                            <constraint firstAttribute="bottom" secondItem="DaU-hx-RAc" secondAttribute="bottom" constant="10" id="b89-X5-6Wu"/>
+                            <constraint firstItem="DaU-hx-RAc" firstAttribute="top" secondItem="Eu2-IU-MP4" secondAttribute="top" constant="10" id="fxv-nv-6be"/>
+                            <constraint firstItem="Efz-yw-2eZ" firstAttribute="leading" secondItem="Eu2-IU-MP4" secondAttribute="leading" constant="10" id="mLz-9k-NNx"/>
+                            <constraint firstAttribute="bottom" secondItem="Efz-yw-2eZ" secondAttribute="bottom" constant="10" id="xLR-AF-tYr"/>
+                            <constraint firstItem="Efz-yw-2eZ" firstAttribute="top" secondItem="Eu2-IU-MP4" secondAttribute="top" constant="10" id="zto-fT-vu8"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="Eu2-IU-MP4" secondAttribute="trailing" id="1Bd-7W-uCZ"/>
+                <constraint firstAttribute="bottom" secondItem="Eu2-IU-MP4" secondAttribute="bottom" id="GEH-O9-eZ1"/>
+                <constraint firstItem="Eu2-IU-MP4" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="Ion-md-rxi"/>
+                <constraint firstItem="Eu2-IU-MP4" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="mLA-W1-nPe"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <size key="customSize" width="345" height="442"/>
+            <connections>
+                <outlet property="mainView" destination="Eu2-IU-MP4" id="KCb-nE-slk"/>
+                <outlet property="shadowView" destination="Efz-yw-2eZ" id="l1f-Ri-qNj"/>
+                <outlet property="tasksCollectionView" destination="DaU-hx-RAc" id="0pe-gb-lmS"/>
+            </connections>
+            <point key="canvasLocation" x="345.6521739130435" y="251.78571428571428"/>
+        </collectionViewCell>
+    </objects>
+</document>

@@ -11,6 +11,7 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="DesksViewController" customModule="FastTask" customModuleProvider="target">
             <connections>
                 <outlet property="desksCollectionView" destination="9ju-QY-n3U" id="rMr-eo-XNF"/>
+                <outlet property="taskButton" destination="9JK-8k-wxd" id="OxF-gK-Gvl"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -20,7 +21,7 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" pagingEnabled="YES" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="9ju-QY-n3U">
-                    <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                    <rect key="frame" x="0.0" y="44" width="414" height="738"/>
                     <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                     <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="rK5-NQ-wVz">
                         <size key="itemSize" width="50" height="50"/>
@@ -29,13 +30,23 @@
                         <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                     </collectionViewFlowLayout>
                 </collectionView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9JK-8k-wxd">
+                    <rect key="frame" x="10" y="792" width="394" height="60"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="60" id="3uZ-4h-B8k"/>
+                    </constraints>
+                    <state key="normal" title="Button"/>
+                </button>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
                 <constraint firstItem="9ju-QY-n3U" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="1to-I8-Ihq"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="9JK-8k-wxd" secondAttribute="trailing" constant="10" id="KA0-Fd-S5x"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="9ju-QY-n3U" secondAttribute="trailing" id="U35-mC-7L1"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="9JK-8k-wxd" secondAttribute="bottom" constant="10" id="ZxD-y7-nS6"/>
                 <constraint firstItem="9ju-QY-n3U" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="bMP-SX-KG4"/>
-                <constraint firstItem="9ju-QY-n3U" firstAttribute="bottom" secondItem="fnl-2z-Ty3" secondAttribute="bottom" id="uL1-S7-BQK"/>
+                <constraint firstItem="9JK-8k-wxd" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="10" id="cmD-2c-USD"/>
+                <constraint firstItem="9JK-8k-wxd" firstAttribute="top" secondItem="9ju-QY-n3U" secondAttribute="bottom" constant="10" id="gHr-7b-vKK"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <point key="canvasLocation" x="131.8840579710145" y="100.44642857142857"/>

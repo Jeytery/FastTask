@@ -16,4 +16,6 @@ class Colors {
     
     public static let purple = UIColor(red: 188/255, green: 66/255, blue: 245/255, alpha: 1)
     
+    public static let blue = UIColor(red: 78/255, green: 129/255, blue: 237/255, alpha: 1)
+    
 }

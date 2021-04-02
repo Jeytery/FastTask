@@ -10,6 +10,10 @@ import UIKit
 
 class Design {
     
-    
+    public static func blueButton(_ button: inout UIButton) {
+        button.backgroundColor = Colors.blue
+        button.layer.cornerRadius = 5
+        button.setTitleColor(.white, for: .normal)
+    }
     
 }

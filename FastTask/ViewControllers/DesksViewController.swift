@@ -17,6 +17,8 @@ class DesksViewController:
     //MARK: - vars
     @IBOutlet weak var desksCollectionView: UICollectionView!
 
+    @IBOutlet weak var taskButton: UIButton!
+    
     public var desks: [Desk] = []
     
     //MARK: - iternal functions
@@ -59,7 +61,8 @@ class DesksViewController:
         desksCollectionView.register(UINib(
             nibName: "DeskCollectionViewCell", bundle: nil),
             forCellWithReuseIdentifier: DeskCollectionViewCell.identifier)
-        //(desksCollectionView.collectionViewLayout as? UICollectionViewFlowLayout)?.scrollDirection = .horizontal
+        taskButton.setTitle(localize(id: TASK_BUTTON_LABEL), for: .normal)
+        Design.blueButton(&taskButton)
         self.title = localize(id: DESKS_VC_TITLE_LABEL)   
     }
     

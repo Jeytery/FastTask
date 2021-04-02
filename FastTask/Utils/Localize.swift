@@ -10,6 +10,8 @@ import Foundation
 
 public let DESKS_VC_TITLE_LABEL = "desks_vc_title_label"
 
+public let TASK_BUTTON_LABEL = "task_button_label"
+
 fileprivate var localizeList = [String: String]()
 
 public func localize(id: String) -> String {
